@@ -831,3 +831,9 @@ input,textarea
     transition: all 0.5s ease 0s;
 }
 
+.projectsDivs:hover div{
+    display: flex;
+}
+.projectsDivs div{
+    display: none;
+}

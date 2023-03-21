@@ -50,7 +50,7 @@
                 <a href="#indicate">Scroll Down</a>
             </div>
             </div>
-          <img src="image.png"id="profileImage"/>
+          <img src="img.png"id="profileImage"/>
         </div>
     </section>
 
@@ -136,19 +136,19 @@
                 <div class="programmingLanguages" onclick="showingProjects('HTML/CSS')">HTML/CSS</div>
               </div>
               <div id="mainProjects">
-                 <div class="projectsDivs">
-                    <img src="Thumbnail/11.png" class="size" onclick="githubOrReplit('LMB')"/>
+                 <div  class="projectsDivs" style="background-image:url('Thumbnail/11.png'); background-size: 100% 100%;">
+                     <div onclick="githubOrReplit('LMB')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Library Management System</div>
                  </div>
-              </div>
+              </div>none
               <div id="miniProhects">
-                <div class="projectsDivs">
-                    <img src="Thumbnail/12.png" class="size" onclick="githubOrReplit('weather')"/>
+                <div class="projectsDivs" style="background-image:url('Thumbnail/12.png'); background-size: 100% 100%;">
+                    <div onclick="githubOrReplit('weather')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Weather app</div>
                 </div>
-                <div class="projectsDivs">
-                    <img src="Thumbnail/13.png" class="size" onclick="githubOrReplit('2048')"/>
+                <div  class="projectsDivs" style="background-image:url('Thumbnail/13.png');background-size: 100% 100%;">
+                    <div onclick="githubOrReplit('2048')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">2048 Game</div>
                 </div>
-                <div class="projectsDivs">
-                    <img src="Thumbnail/2.jpg" class="size"onclick="githubOrReplit('ArrayList')"/>
+                <div  class="projectsDivs" style="background-image:url('Thumbnail/2.jpg');background-size: 100% 100%;">
+                    <div onclick="githubOrReplit('ArrayList')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">ArrayList</div>
                 </div>
               </div>
             </div>
@@ -223,7 +223,7 @@
         var totalHeight = document .body.scrollHeight - window.innerHeight;
         window.onscroll = function(){
             var progress =( window.pageYOffset / totalHeight) * 100;
-            preogressbar.style.height = progress + "%";
+            //preogressbar.style.height = progress + "%";
             percent.innerHTML = "Page Scrolled " + Math.round(progress)+ "%"
         }
     </script>
