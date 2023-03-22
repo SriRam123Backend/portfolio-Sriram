@@ -115,7 +115,7 @@
                     <div class="bars">
                         <div class="info">
                             <span>Scratch</span>
-                            <span>100%</span>
+                            <span>90%</span>
                         </div>
                         <div class="line wordpress"></div>
                     </div>
@@ -131,9 +131,9 @@
             <h2 class="title">My Projects</h2>
             <div class="Projects">
               <div id="topic">
-                <div class="programmingLanguages" onclick="showingProjects('JAVA')">JAVA</div>
-                <div class="programmingLanguages" onclick="showingProjects('JAVASCRIPT')">JAVASCRIPT</div>
-                <div class="programmingLanguages" onclick="showingProjects('HTML/CSS')">HTML/CSS</div>
+                <div class="programmingLanguages" id="javaColor" style="color:rgb(212, 66, 96);" onclick="showingProjects('JAVA')">JAVA</div>
+                <div class="programmingLanguages" id="jsColor" onclick="showingProjects('JAVASCRIPT')">JAVASCRIPT</div>
+                <div class="programmingLanguages" id="htmlColor" onclick="showingProjects('HTML/CSS')">HTML/CSS</div>
               </div>
               <div id="mainProjects">
                  <div  class="projectsDivs" style="background-image:url('Thumbnail/11.png'); background-size: 100% 100%;">
@@ -209,8 +209,6 @@
         var totalHeight = document .body.scrollHeight - window.innerHeight;
         window.onscroll = function(){
             var progress =( window.pageYOffset / totalHeight) * 100;
-            //preogressbar.style.height = progress + "%";
-            percent.innerHTML = "Page Scrolled " + Math.round(progress)+ "%"
         }
     </script>
 <!-- pre loader js  -->

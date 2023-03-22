@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-    strings: [" Backend developer","Fresher"],
+    strings: [" Backend developer","Enthusiastic Person "],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -75,19 +75,26 @@ function showingProjects(languageName)
 {
     document.getElementById("mainProjects").innerHTML="";
     document.getElementById("miniProhects").innerHTML="";
+    document.getElementById("javaColor").style.color="white";
+    document.getElementById("jsColor").style.color="white";
+    document.getElementById("htmlColor").style.color="white";
+
 
     if(languageName=="JAVA")
     {
+        document.getElementById("javaColor").style.color="rgb(212, 66, 96)";
         document.getElementById("mainProjects").innerHTML=`<div  class="projectsDivs" style="background-image:url('Thumbnail/11.png'); background-size: 100% 100%;"><div onclick="githubOrReplit('LMB')"  style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Library Management System</div></div>`;
         document.getElementById("miniProhects").innerHTML=`<div class="projectsDivs" style="background-image:url('Thumbnail/12.png'); background-size: 100% 100%;"><div onclick="githubOrReplit('weather')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Weather app</div></div><div  class="projectsDivs" style="background-image:url('Thumbnail/13.png');background-size: 100% 100%;"><div onclick="githubOrReplit('2048')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">2048 Game</div></div><div  class="projectsDivs" style="background-image:url('Thumbnail/2.jpg');background-size: 100% 100%;"><div onclick="githubOrReplit('ArrayList')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">ArrayList</div></div>`;
     }
     else if(languageName=="JAVASCRIPT")
     {
-        document.getElementById("mainProjects").innerHTML=`<div  class="projectsDivs" style="background-image:url('Thumbnail/10.png'); background-size: 100% 100%;"> <div onclick="githubOrReplit('MTB')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Movie Ticket Booking</div></div>`;
+        document.getElementById("jsColor").style.color="rgb(212, 66, 96)";
+        document.getElementById("mainProjects").innerHTML=`<div  class="projectsDivs" style="background-image:url('Thumbnail/10.png'); background-size: 100% 100%;"> <div onclick="githubOrReplit('MTB')" style="width: 100%;height: 100%;backgr rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Movie Ticket Booking</div></div>`;
         document.getElementById("miniProhects").innerHTML=`<div class="projectsDivs" style="background-image:url('Thumbnail/6.png'); background-size: 100% 100%;"><div onclick="githubOrReplit('tipCalc')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Tip Calculator</div></div><div  class="projectsDivs" style="background-image:url('Thumbnail/9.png');background-size: 100% 100%;"><div onclick="githubOrReplit('musicPlayer')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Music Player</div></div><div  class="projectsDivs" style="background-image:url('Thumbnail/8.png');background-size: 100% 100%;"><div onclick="githubOrReplit('RPS')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Rock Paper Scissor Game</div></div>`;
     }
     else if(languageName=="HTML/CSS")
     {
+        document.getElementById("htmlColor").style.color="rgb(212, 66, 96)";
         document.getElementById("mainProjects").innerHTML=`<div  class="projectsDivs" style="background-image:url('Thumbnail/1.png'); background-size: 100% 100%;"><div onclick="githubOrReplit('html1')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Formula By Pixelarity</div>`;
         document.getElementById("miniProhects").innerHTML=`<div class="projectsDivs" style="background-image:url('Thumbnail/3.png'); background-size: 100% 100%;"><div onclick="githubOrReplit('html2')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Skilled Website</div></div><div  class="projectsDivs" style="background-image:url('Thumbnail/4.png');background-size: 100% 100%;"><div onclick="githubOrReplit('html3')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Suite Website</div></div><div  class="projectsDivs" style="background-image:url('Thumbnail/5.png');background-size: 100% 100%;"><div onclick="githubOrReplit('html4')" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.533);justify-content: center;color: white;align-items: center;">Easy Bank Website</div></div>`;
     }onclick="githubOrReplit(weather)" 
