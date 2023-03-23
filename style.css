@@ -407,6 +407,10 @@ section .title::after{
 .skills-content .right .wordpress::before{
     width: 90%;
 }
+.skills-content .right .mickey::before{
+    width: 40%;
+}
+
 
 
 /* projects section styling */
